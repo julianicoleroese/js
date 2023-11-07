@@ -2,8 +2,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif ;
     text-align: center;
-    background: rgb(0,254,255);
-    background: linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(58,119,150,0.7791491596638656) 50%, rgba(0,212,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 .board {
@@ -26,10 +26,20 @@ body {
 }
 
 .cell:hover {
-    background-color: #00b1c9; 
+    background-color: #bceef5; 
 }
 
 .message {
     font-size: 24px; 
     margin-top: 20px; 
 }
+
+.cell::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d"; /* Ícone "X" */
+}
+
+.cell:hover::before {
+    content: "\f192"; /* Ícone "O" */
+}
+

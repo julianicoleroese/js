@@ -17,7 +17,7 @@ function handleCellClick(index) {
     if (gameover || cells[index] !== '') return; 
 
     cells[index] = jogadorAtual; 
-    board.children[index].textContent = jogadorAtual; 
+    board.children[index].innerHTML = `<i class="fas ${jogadorAtual === 'X' ? 'fa-times' : 'fa-dot-circle'}"></i>`;
 
     if (checkWinner()) { 
         gameover = true; 
