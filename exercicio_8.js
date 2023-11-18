@@ -15,7 +15,9 @@ for (let i = 0; i < 9; i++) {
 
 function handleCellClick(index) {
     if (gameover || cells[index] !== '') return; 
-
+//Adicionado ícones usando classes do Font Awesome para representar os jogadores X e O no tabuleiro.
+//board.children[index].innerHTML = '<i class="fas fa-times"></i>'; é usado para o jogador X e board.children[index].innerHTML = '<i class="fas fa-dot-circle"></i>'; é usado para o jogador O.
+//Está linkado no head do html.
     cells[index] = jogadorAtual; 
     board.children[index].innerHTML = `<i class="fas ${jogadorAtual === 'X' ? 'fa-times' : 'fa-dot-circle'}"></i>`;
 
