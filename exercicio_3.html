@@ -31,19 +31,17 @@
         var n2 = prompt("Digite o segundo número");
         var n3 = prompt("Digite o terceiro número");
 
-        alert (n1 + " " + n2 + " " + n3)
-        
-            if ((n1>n2) && (n1>n3))
-            alert("O primeiro número é maior"+ n1)
-        else 
-            if ((n2>n1) && (n2>n3))
-            alert("O segundo número é maior" + n2)
-        else
-            if ((n3>n1) && (n3>n2)) 
-            alert("O terceiro número é o maior"+ n3)
-        else
-        alert("Os números são iguais ou nada foi informado")
-        
+        alert(n1 + " " + n2 + " " + n3);
+
+        if (n1 > n2 && n1 > n3) {
+            alert("O primeiro número é maior: " + n1);
+        } else if (n2 > n1 && n2 > n3) {
+            alert("O segundo número é maior: " + n2);
+        } else if (n3 > n1 && n3 > n2) {
+            alert("O terceiro número é o maior: " + n3);
+        } else {
+            alert("Os números são iguais ou nada foi informado");
+        }
     </script>
 </head>
 
