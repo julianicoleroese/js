@@ -1,0 +1,30 @@
+ul.baloes {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  ul.baloes li {
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  ul.baloes li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul.baloes li:hover {
+    background-color: #e0e0e0;
+  }
