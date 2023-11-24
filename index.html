@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meu Portfólio</title>
+  <title>Meus Exercícios</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bem-vindo ao Meu Portfólio!</h1>
+  <h1>Bem-vindo aos Meus Exercícios!</h1>
   <ul class="baloes">
-    <li><a href="exercicio_1.html">Página 1</a></li>
-    <li><a href="exercicio_2.html">Página 2</a></li>
-    <li><a href="exercicio_3.html">Página 3</a></li>
-    <li><a href="exercicios_4.html">Página 4</a></li>
-    <li><a href="exercicio_5.html">Página 5</a></li>
-    <li><a href="exercicios_7.html">Página 6</a></li>
-    <li><a href="exercicio_8.html">Página 7</a></li>
-    <li><a href="exercicio_9.html">Página 8</a></li>
-    <li><a href="exercicio_10.html">Página 9</a></li>
+    <li>
+      <a href="exercicio_1.html">Exercicio 1</a>
+      <div class="balao-flutuante">Boo!</div>
+    </li>
+    <li>
+      <a href="exercicio_2.html">Exercicio 2</a>
+      <div class="balao-flutuante">:o</div>
+    </li>
+    <li>
+      <a href="exercicio_3.html">Exercicio 3</a>
+      <div class="balao-flutuante">Me visite :D</div>
+    </li>
+    <li>
+      <a href="exercicios_4.html">Exercicio 4</a>
+      <div class="balao-flutuante">Nao me clique >:(</div>
+    </li>
+    <li>
+      <a href="exercicio_5.html">Exercicio 5</a>
+      <div class="balao-flutuante">Boooo!</div>
+    </li>
+    <li>
+      <a href="exercicios_7.html">Exercicio 6</a>
+      <div class="balao-flutuante">:D</div>
+    </li>
+    <li>
+      <a href="exercicio_8.html">Exercicio 7</a>
+      <div class="balao-flutuante">:)</div>
+    </li>
+    <li>
+      <a href="exercicio_9.html">Exercicio 8</a>
+      <div class="balao-flutuante">:o</div>
+    </li>
+    <li>
+      <a href="exercicio_10.html">Exercicio 10</a>
+      <div class="balao-flutuante">Olá!</div>
+    </li>
+
   </ul>
+
+  <p>Veja aqui todos os exercícios que pratiquei no 3° Trimestre!</p>
+
+  <script>
+    const baloes = document.querySelectorAll('.baloes li');
+
+    baloes.forEach((balao) => {
+      balao.addEventListener('mouseover', () => {
+        const balaoFlutuante = balao.querySelector('.balao-flutuante');
+        balaoFlutuante.style.display = 'block';
+      });
+
+      balao.addEventListener('mouseout', () => {
+        const balaoFlutuante = balao.querySelector('.balao-flutuante');
+        balaoFlutuante.style.display = 'none';
+      });
+    });
+  </script>
 </body>
 </html>

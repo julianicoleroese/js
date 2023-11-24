@@ -1,3 +1,19 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background: rgb(145,76,148);
+  background: radial-gradient(circle, rgba(145,76,148,1) 0%, rgba(117,6,131,1) 50%, rgba(148,76,116,1) 100%);
+}
+
+p {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
 ul.baloes {
     list-style-type: none;
     padding: 0;
@@ -27,4 +43,38 @@ ul.baloes {
   
   ul.baloes li:hover {
     background-color: #e0e0e0;
+  }
+
+  .baloes li {
+    position: relative;
+  }
+
+  .balao-flutuante {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+    top: -50px;
+    left: -50px;
+    animation: float 3s infinite alternate;
+  }
+
+  .baloes li:hover .balao-flutuante {
+    display: block;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
